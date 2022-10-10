@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="fork"
+           fetch="https://github.com/XenStuff" 
+           revision="tm"/>
+<!-- remove -->
+  <remove-project name="vendor_proton" />
+  <remove-project name="frameworks_base" />
+  <remove-project name="packages_apps_Settings" />
+
+  <project path="vendor/proton" name="vendor_proton" remote="fork"  />
+  <project path="frameworks/base" name="frameworks_base" remote="fork" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="fork" />
+
+</manifest>
